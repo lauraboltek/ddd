@@ -1,323 +1,385 @@
-*{margin: 0; padding: 0; box-sizing: border-box;}
-
-@font-face {
-    font-family: 'icomoon';
-    src:  url('fonts/icomoon.woff?a2qhcp') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.pseudo {
+  content: "";
+  display: block;
+  position: absolute;
+}
 .icon-envelope {
-    content: "\e900";
-  }
+  content: "\e900";
+}
 .icon-telephone {
-    content: "\e901";
-  }
-  
-
-body{
-    font: 18px/1.5 'Montserrat', sans-serif;
-    background-color: #fff;
+  content: "\e901";
 }
-
+.icon-rat {
+  content: "\e902";
+}
+.icon-bird {
+  content: "\e903";
+}
+.icon-mosquito {
+  content: "\e904";
+}
+.icon-shape2 {
+  content: "\e905";
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.woff?a2qhcp') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.section-wrapper {
+  width: 1440px;
+  margin: auto;
+}
+.section-alt {
+  background: #F2F9FD;
+  padding-top: 20px;
+}
+body {
+  font: 18px/1.5 'Montserrat', sans-serif;
+  background-color: #fff;
+}
 .container {
-    width: 1440px;
-    padding-top: 5px;
-    margin: auto;
-    display: flex;
+  width: 1440px;
+  padding-top: 5px;
+  margin: auto;
+  display: flex;
 }
-
-.logo{
-    width: 112px;
-    height: 118px;
-    position: absolute;
+.logo {
+  width: 112px;
+  height: 118px;
+  position: absolute;
 }
-
-.page-intro{
-    padding-top: 200px;
-    background: linear-gradient(180deg, #FFFFFF 0%, #E5F0F6 100%);
-    height: 900px;
+h3 {
+  font-size: 24px;
+  line-height: 28px;
+  padding-top: 45px;
+  padding: 24px 0 14px;
 }
-
-.circle-deratizacija{
-    position: absolute;
-    height: 173px;
-    width: 171px;
-    top: 120px;
-    left: -20px;
-    background-color: #FFF504;
-    border-radius: 50%;
-    justify-content: center;
-    display: flex;
-    text-decoration: none;
+p {
+  padding-bottom: 10px;
 }
-
-.circle-dezinsekcija{
-    position: absolute;
-    height: 173px;
-    width: 171px;
-    top: 420px;
-    left: -20px;
-    background-color: #fff;
-    color: black;
-    border-radius: 50%;
-    justify-content: center;
-    display: flex;
-    text-decoration: none;
+.page-intro {
+  padding-top: 200px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #E5F0F6 100%);
+  height: 900px;
 }
-
-.circle-dezinfekcija{
-    position: absolute;
-    height: 173px;
-    width: 171px;
-    top: 120px;
-    left: 450px;
-    background-color: #fff;
-    color: black;
-    border-radius: 50%;
-    justify-content: center;
-    display: flex;
-    text-decoration: none;
+.circle-deratizacija {
+  position: absolute;
+  height: 173px;
+  width: 171px;
+  top: 120px;
+  left: -20px;
+  background-color: #FFF504;
+  border-radius: 50%;
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
 }
-
-.circle-zastita{
-    position: absolute;
-    height: 173px;
-    width: 171px;
-    top: 420px;
-    left: 450px;
-    background-color: #fff;
-    color: black;
-    border-radius: 50%;
-    justify-content: center;
-    display: flex;
-    text-decoration: none;
+.circle-dezinsekcija {
+  position: absolute;
+  height: 173px;
+  width: 171px;
+  top: 420px;
+  left: -20px;
+  background-color: #fff;
+  color: black;
+  border-radius: 50%;
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
 }
-
-.istrebljivac{
-    width: 591px;
-    height: 546px;
-    flex-shrink: 0;
-    text-align: center;
-    position: relative;
-    top: -200px;
-    right: -150px;
+.circle-dezinfekcija {
+  position: absolute;
+  height: 173px;
+  width: 171px;
+  top: 120px;
+  left: 450px;
+  background-color: #fff;
+  color: black;
+  border-radius: 50%;
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
 }
-
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 1134px;
-    height: 22px;
-    display: flex;
-    font-family: Montserrat Bold;
-    list-style: none;
-    margin: -50px 0px 0px 250px ;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 22px;
+.circle-zastita {
+  position: absolute;
+  height: 173px;
+  width: 171px;
+  top: 420px;
+  left: 450px;
+  background-color: #fff;
+  color: black;
+  border-radius: 50%;
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
 }
-
+.istrebljivac {
+  width: 591px;
+  height: 546px;
+  flex-shrink: 0;
+  text-align: center;
+  position: relative;
+  top: -200px;
+  right: -150px;
+}
+.nav {
+  align-items: center;
+  justify-content: space-between;
+  width: 1134px;
+  height: 22px;
+  display: flex;
+  font-family: Montserrat Bold;
+  list-style: none;
+  margin: -50px 0px 0px 250px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+}
 .name {
-    font-size: 36px;
-    width: 600px;
-    height: 44px;
+  font-size: 36px;
+  width: 600px;
+  height: 44px;
 }
-
-.info{
-    padding-top: 20px;
-    line-height: 26px;
-    padding-bottom: 30px;
+.info {
+  padding-top: 20px;
+  line-height: 26px;
+  padding-bottom: 30px;
 }
-
-.blue{
-    color: #0093dd;
+.blue {
+  color: #0093dd;
 }
-
-.icon-title{
-    color: #232323;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 29px;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    }
-
-.rat{
-    position: absolute;
-    top: 50px;
-    left: 40px;
+.icon-title {
+  color: #232323;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29px;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
-
-.mosquito{
-    position: absolute;
-    top: 50px;
-    left: 50px;
+.rat {
+  position: absolute;
+  top: 50px;
+  left: 40px;
 }
-
-.circle-title{
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    color: black;
+.mosquito {
+  position: absolute;
+  top: 50px;
+  left: 50px;
 }
-
-.circle-title2{
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    align-items: center;
+.circle-title {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: black;
 }
-
-.circle-title3{
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    align-items: center;
+.circle-title2 {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  align-items: center;
 }
-
-.circle-title4{
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    align-items: center;
+.circle-title3 {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  align-items: center;
 }
-
-.shape2{
-    position: absolute;
-    top: 50px;
-    left: 50px;
+.circle-title4 {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  align-items: center;
 }
-
-.bird{
-    position: absolute;
-    top: 50px;
-    left: 50px;
+.shape2 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
 }
-
-.contact-info{
-    display: flex;
-    align-items: center;
-    margin-top: 200px;
+.bird {
+  position: absolute;
+  top: 50px;
+  left: 50px;
 }
-
-.icon{
-    position: relative;
-    padding-left: 30px;
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
 }
-.icon:before{
-    content: "\e901";
-    position: absolute;
-    left: 0;
-    top: 0;
-    font: 20px/20px icomoon;
-    color: #0093dd;
+.icon {
+  position: relative;
+  padding-left: 30px;
 }
-.tel{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    margin-right: 20px;
+.icon:before {
+  content: "\e901";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font: 20px/20px icomoon;
+  color: #0093dd;
 }
-
-.mail{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+.tel {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-right: 20px;
 }
-.mail:before{
-    content:"\e900";
-    color: #0093dd;
+.mail {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
-
-.tel:before{
-    font-size: 21px;
-    line-height: 21px;
-    margin-right: 15px;
+.mail:before {
+  content: "\e900";
+  color: #0093dd;
 }
-.list{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.tel:before {
+  font-size: 21px;
+  line-height: 21px;
+  margin-right: 15px;
 }
-.list li{
-    position: relative;
-    padding-left: 25px;
+.list {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  font-size: 16px;
 }
-.list li:before{
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 8px;
-    width: 10px;
-    height: 10px;
-    background: #FFF504;
-    border-radius: 100px;
+.list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 5px;
+}
+.list li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  background: #FFF504;
+  border-radius: 100px;
 }
 .blue-section {
-    display: flex;
-    margin: auto;
-    background-image: url(img/BG.jpg);
-    padding: 100px;
+  display: flex;
+  margin: auto;
+  background-image: url(img/BG.jpg);
+  padding: 100px;
 }
-
 .mjere {
-	color: #FFFFFF;
-	font-size: 36px;
-	font-weight: bold;
-    line-height: 44px;
-    margin-bottom: 30px;
-    margin-left: -10px;
-    margin-top: 20px;
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 44px;
+  margin-bottom: 30px;
+  margin-left: -10px;
+  margin-top: 20px;
 }
-
 .wrapper {
-    max-width: 1440px;
-    position: relative;
-    margin: auto;
+  max-width: 1440px;
+  position: relative;
+  margin: auto;
 }
-
 .service-content {
-    display: flex;
-    justify-content: space-between;
-    color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  color: #FFF;
 }
-
-.service-content ul{
-    width: 50%;
-    margin-right: 30px;
+.service-content ul {
+  width: 50%;
+  margin-right: 30px;
 }
-
 .deratizacija {
-    display: flex;
-    justify-content: space-between;
-    height: 1440px;
-    width: 922px;
-    color: #fff;
+  display: flex;
+  justify-content: space-between;
+  height: 1440px;
+  width: 922px;
 }
-
-.name-deratizacija {
-    color: #0093DD;
-    height: 66px;
-    width: 413px;
-    font-size: 54px;
-    font-weight: bold;
-    line-height: 66px;
-    position: absolute;
-    margin-top: 120px;
-    margin-left: 104px;
+.section-title {
+  color: #0093DD;
+  font-size: 54px;
+  line-height: 66px;
+  text-transform: uppercase;
+  display: flex;
+  position: relative;
+}
+.section-title:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #0093DD;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "\e902";
+  font: 50px/50px "icomoon";
+  color: #fff;
+  margin-left: -120px;
+  margin-top: -20px;
+}
+.section-title-dezinsekcija:before {
+  content: "\e904";
+}
+.section-title-dezinfekcija:before {
+  content: "\e905";
+}
+.section-title-zastita:before {
+  content: "\e903";
+}
+.section-wrapper {
+  justify-content: space-between;
+  display: flex;
+  margin: auto;
+  position: relative;
+  margin-top: 80px;
+  margin-left: 300px;
+  padding-bottom: 100px;
+}
+.left-side {
+  padding-right: 75px;
+}
+.list-blue li:before {
+  background: #0093DD;
+}
+.list-y li:before {
+  top: 3px;
+  width: 10px;
+  height: 10px;
+  background: #FFF504;
+  border: 3px solid black;
+}
+.right-side {
+  width: 600px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  padding-top: 20px;
+}
+.right-side img {
+  display: block;
+  margin-bottom: 20px;
 }
