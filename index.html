@@ -6,60 +6,65 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Document</title>
+	<title>Početna</title>
 </head>
 <body>
-	<header class="container" >
-		<div class="row">
+	<header class="header" >
+		<div class="wrapper">
 				<img src="img/Logo.png" class="col-sm-1"/>
+				<div class="header-info">
+					<a href="tel:098465485" class="icon tel">
+						<span>098 465 485</span>
+					</a>
+					<a href="mailto:ddd@bioinstitut.hr" class="icon mail">
+						<span>ddd@bioinstitut.hr</span>
+					</a>
+				</div>
 				<ul class="nav">
-					<li class="blue"><a href="#"></a>O nama</li>
-					<li>Deratizacije</li>
-					<li>Dezinsekcije</li>
-					<li>Dezinfekcije peradarskih objekata</li>
-					<li>Zaštite od ptica</li>
-					<li>Kontakt</li>
+					<li><a href="#o-nama" title="O nama"></a>O nama</li>
+					<li><a href="#deratizacije" title="Deratizacije"></a>Deratizacije</li>
+					<li><a href="#dezinsekcije" title="Dezinsekcije"></a>Dezinsekcije</li>
+					<li><a href="#dezinfekcije" title="Dezinfekcije peradarskih objekata"></a>Dezinfekcije peradarskih objekata</li>
+					<li><a href="#zastite" title="Zaštite od ptica"></a>Zaštite od ptica</li>
+					<li><a href="#kontakt" title="Kontakt"></a>Kontakt</li>
 				</ul>
 		</div>    
 	</header>
 
 	<div class="page-intro">
 		<div class="container">
-			<div class="o-nama">
-				<h1 class="name"><b class="blue">DDD SLUŽBA</b> Bioinstituta d.o.o.</h1>
+			<div class="o-nama"  id="o-nama">
+				<h2 class="name"><strong class="blue">DDD SLUŽBA </strong>Bioinstituta d.o.o.</h2>
 				<p class="info">DDD SLUŽBA Bioinstituta d.o.o. Čakovec provodi poslove dezinfekcije, dezinsekcije i deratizacije u Vašim objektima sa ciljem uklanjanja rizika od pojave i prijenosa zaraznih bolesti, osiguranja zdravstvene ispravnosti hrane i predmeta opće uporabe, održavanja sanitarno-tehničkih uvjeta rada na svim površinama, prostorima i objektima od javne namjene te uklanjanja gospodarskih i ekonomskih šteta.</p>
-				<p>
-					<a href="tel:098465485" class="icon tel">
-						<span>098 465 485</span>
-					</a>
-					<a href="mailto:ddd@bioinstitut.hr" class="icon mail">
-						<span>ddd@bioinstitut.hr</span>
-					</a>			
-				</p>
+				<div class="info-con">
+					<p>
+						<a href="tel:098465485" class="icon tel">
+							<span>098 465 485</span>
+						</a>
+						<a href="mailto:ddd@bioinstitut.hr" class="icon mail">
+							<span>ddd@bioinstitut.hr</span>
+						</a>			
+					</p>
+				</div>
 			</div>
 
 				<div class="istrebljivac">
 					<img src="img/exterminator.svg">
 					<h2 class="icon-title">Koje usluge pružamo?</h2>
-					
-					<a class="circle-deratizacija" href="#deratizacije">	 
-						<img src="img/Rat.svg" class="rat">
+					<a class="circle circle-deratizacija" href="#deratizacije">	 
 						<span class="circle-title">Deratizacija</span>
 					</a>
 
-					<a class="circle-dezinsekcija" href="#dezinsekcije">	 
-						<img src="img/mosquito.svg" class="mosquito">
-						<span class="circle-title2">Dezinsekcija</span>
+					<a class="circle circle-dezinsekcija" href="#dezinsekcije">	 
+						<span class="circle-title circle-title2">Dezinsekcija</span>
 					</a>
 
-					<a class="circle-dezinfekcija" href="#dezinfekcije">	 
-						<img src="img/Shape2.svg" class="shape2">
-						<span class="circle-title3">Dezinfekcija</span>
+					<a class="circle circle-dezinfekcija" href="#dezinfekcije">	 
+						<span class="circle-title circle-title3">Dezinfekcija <br> peradarskih <br> objekata</span>
 					</a>
 					
-					<a class="circle-zastita" href="#zastite">	 
-						<img src="img/Bird.svg" class="bird">
-						<span class="circle-title4">Zaštita od ptica</span>
+					<a class="circle circle-zastita" href="#zastite">	 
+						<span class="circle-title circle-title4">Zaštita <br> od ptica</span>
 					</a>
 				</div>
 		</div>
@@ -124,7 +129,7 @@
 		<div class="left-side">
 			<h2 class="section-title section-title-dezinsekcija" id="dezinsekcije">Dezinsekcija</h2>
 			<h3>Zašto suzbijamo muhe?</h3>
-			<p>Cilj suzbijanja muha je da se spriječi prijenos mikroorganizama i zaraznih bolesti pučanstva te da se spriječi uznemiravanje pučanstva tijekom dnevnih aktivnosti. Muhe su potencijalni prijenosnici salmoneloza, šigeloza, enterovirusa, hepatitisa A, jajašca crijevnih parazita.</p>
+			<p class="p">Cilj suzbijanja muha je da se spriječi prijenos mikroorganizama i zaraznih bolesti pučanstva te da se spriječi uznemiravanje pučanstva tijekom dnevnih aktivnosti. Muhe su potencijalni prijenosnici salmoneloza, šigeloza, enterovirusa, hepatitisa A, jajašca crijevnih parazita.</p>
 			<h3>Kojim sve metodama suzbijamo muhe?</h3>
 			<ul class="list list-blue">
 				<li>Premazivanjem površina na kojima se zadržavaju odrasle muhe svakih 6 do 8 tjedana</li>
@@ -141,11 +146,11 @@
 				<li>Posebno je važno održavati higijenu u objektima za uzgoj životinja (održavanje ispravnog drenažnog sustava za odvodnju vode i tekućeg gnoja, redovito mijenjanje stelje i slame te njihovo pravilno zbrinjavanje, instaliranje ventilatora)</li>
 			</ul>
 			<h3>Zašto se suzbijaju ose i stršljenovi, a ne pčele i bumbari?</h3>
-			<p>Ose i stršljenovi se suzbijaju zato jer postoji za čovjeka potencijalna opasnost uboda. Jačina i težina simptoma nakon uboda ovisi o samoj vrsti opnokrilaca, o samom mjestu i dubini uboda, osjetljivosti organizma i ozbiljnosti reakcije organizma.</p>
-			<p>Reakcije organizma mogu biti lokalne i sustavne. Kod lokalnih reakcija nakon uboda koji mogu biti vrlo nelagodni nastaje samo blaga nadraženost najčešće na mjestu uboda, a nakon početne boli, javlja se crvenilo i oteklina kože s povišenom lokalnom temperaturom, svrbežom i osjećajem pečenja.</p>
-			<p>Sustavne reakcije javljaju se kod osjetljivih osoba, a simptomi mogu biti od blagih (porast tjelesne temperature, crvenilo, svrbež, mučnina) do vrlo teških, koji mogu dovesti do anafilaktičkog šoka koji može završiti smrću.</p>
+			<p class="p">Ose i stršljenovi se suzbijaju zato jer postoji za čovjeka potencijalna opasnost uboda. Jačina i težina simptoma nakon uboda ovisi o samoj vrsti opnokrilaca, o samom mjestu i dubini uboda, osjetljivosti organizma i ozbiljnosti reakcije organizma.</p>
+			<p class="p">Reakcije organizma mogu biti lokalne i sustavne. Kod lokalnih reakcija nakon uboda koji mogu biti vrlo nelagodni nastaje samo blaga nadraženost najčešće na mjestu uboda, a nakon početne boli, javlja se crvenilo i oteklina kože s povišenom lokalnom temperaturom, svrbežom i osjećajem pečenja.</p>
+			<p class="p">Sustavne reakcije javljaju se kod osjetljivih osoba, a simptomi mogu biti od blagih (porast tjelesne temperature, crvenilo, svrbež, mučnina) do vrlo teških, koji mogu dovesti do anafilaktičkog šoka koji može završiti smrću.</p>
 			<h3>Kako suzbijamo ose i stršljenove?</h3>
-			<p>Ose i stršljeni suzbijaju se aktivno i pasivno. Kada je poznata točna lokacija gnijezda i ako je gnijezdo dostupno uništava se polaganim prskanjem insekticidom te naknadnim mehaničkim uklanjanjem gnijezda. Ukoliko je mjesto gniježđenja osa i stršljena nepoznato tada se provodi pasivno uništavanje klopkama s mamcima.</p>
+			<p class="p">Ose i stršljeni suzbijaju se aktivno i pasivno. Kada je poznata točna lokacija gnijezda i ako je gnijezdo dostupno uništava se polaganim prskanjem insekticidom te naknadnim mehaničkim uklanjanjem gnijezda. Ukoliko je mjesto gniježđenja osa i stršljena nepoznato tada se provodi pasivno uništavanje klopkama s mamcima.</p>
 			<h3>A kako vi možete izbjeći uboda osa i stršljenova?</h3>
 			<ul class="list list-y">
 				<li>Izbjegavate boravak u vrtovima i voćnjacima blizu cvijeća i zrelog voća</li>
@@ -159,7 +164,7 @@
 				<li>Ne nanosite intenzivne mirise</li>
 			</ul>
 			<h3>Zašto suzbijamo komarce?</h3>
-			<p>Cilj suzbijanja komaraca i njihovih razvojnih oblika je radi sprečavanja pojave zaraznih bolesti pučanstva (West Nile groznica, Denga groznica, Zika virus), smanjenje uzrokovanja kožnih problema, urtika, eritrema, alergijskih reakcija nastalih ubodima komaraca, sekundarnih infekcija te smetnji pri normalnom odvijanju svakodnevnih aktivnosti pučanstva i turista.</p>
+			<p class="p">Cilj suzbijanja komaraca i njihovih razvojnih oblika je radi sprečavanja pojave zaraznih bolesti pučanstva (West Nile groznica, Denga groznica, Zika virus), smanjenje uzrokovanja kožnih problema, urtika, eritrema, alergijskih reakcija nastalih ubodima komaraca, sekundarnih infekcija te smetnji pri normalnom odvijanju svakodnevnih aktivnosti pučanstva i turista.</p>
 			<h3>Što mi radimo?</h3>
 			<ul class="list list-blue">
 				<li>Sustavno otkrivamo, registriramo i pratimo potencijalna i postojeća legla !</li>
@@ -174,7 +179,7 @@
 				<li>Neke komarce privlači svjetlost; ugasitite svjetlo gdjegod nije nužno da bi mjesta bila manje privlačna komarcima!</li>
 			</ul>
 			<h3>Zašto suzbijamo žohare?</h3>
-			<p>Cilj suzbijanja muha je da se spriječi prijenos mikroorganizama i zaraznih bolesti pučanstva te da se spriječi uznemiravanje pučanstva tijekom dnevnih aktivnosti. Muhe su potencijalni prijenosnici salmoneloza, šigeloza, enterovirusa, hepatitisa A, jajašca crijevnih parazita.</p>
+			<p class="p">Cilj suzbijanja muha je da se spriječi prijenos mikroorganizama i zaraznih bolesti pučanstva te da se spriječi uznemiravanje pučanstva tijekom dnevnih aktivnosti. Muhe su potencijalni prijenosnici salmoneloza, šigeloza, enterovirusa, hepatitisa A, jajašca crijevnih parazita.</p>
 			<h3>Što činimo da eliminiramo žohare iz vašeg prostora?</h3>
 			<ul class="list list-blue">
 				<li>Inspekciju odnosno utvrđivanje stupnja infestacije i ekoloških niša</li>
@@ -203,7 +208,7 @@
 		<div class="left-side">
 			<h2 class="section-title section-title-dezinfekcija" id="dezinfekcije">Dezinfekcija peradarskih objekata</h2>
 			<h3>Zašto je potrebna dezinfekcija nakon svakog uzgojnog ciklusa?</h3>
-			<p>Način uzgoja životinja u intenzivnoj proizvodnji (brzina turnusa, manipulacija sa životinjama i hranom) te kontakt ljudi (servisiranje opreme, posjetioci,radnici) čine ovu proizvodnju vrlo ranjivu na širenje bolesti iz jednog uzgojnog ciklusa u slijedeći uzgojni ciklus, kao i sa farme na farmu. Stoga treba redovito provoditi preventivne mjere, a dezinfekcija je jedna od njih.</p>
+			<p class="p">Način uzgoja životinja u intenzivnoj proizvodnji (brzina turnusa, manipulacija sa životinjama i hranom) te kontakt ljudi (servisiranje opreme, posjetioci,radnici) čine ovu proizvodnju vrlo ranjivu na širenje bolesti iz jednog uzgojnog ciklusa u slijedeći uzgojni ciklus, kao i sa farme na farmu. Stoga treba redovito provoditi preventivne mjere, a dezinfekcija je jedna od njih.</p>
 			<h3>Koje su faze čišćenja i dezinfekcije objakata za uzgoj životinja?</h3>
 			<ul class="list list-blue">
 				<li>Mehaničko suho čišćenje (sustava za hranjenje i pojenje, površine podova i zidova, otvora za zrak, sustava za ventilaciju, šupljina i ležišta u zidovima)</li>
@@ -230,7 +235,7 @@
 		<div class="left-side">
 			<h2 class="section-title section-title-zastita" id="zastite">Zaštita od ptica</h2>
 			<h3>Zašto zaštita od golubova?</h3>
-			<p>Golubovi se smatraju urbanim štetnicima s kojih se na čovjeka mogu prenijeti mnoge bakterijske, virusne, parazitne i mikotične bolesti, kao što su: psitakoza, influenca, salmoneloza, mikobakterioza, listerioza, West Nail bolest.</p>
+			<p class="p">Golubovi se smatraju urbanim štetnicima s kojih se na čovjeka mogu prenijeti mnoge bakterijske, virusne, parazitne i mikotične bolesti, kao što su: psitakoza, influenca, salmoneloza, mikobakterioza, listerioza, West Nail bolest.</p>
 			<h3>Kako izgleda zaštita od golubova?</h3>
 			<ul class="list list-blue">
 				<li>Svi prostori i površine gdje su boravili golubovi se prvo moraju dobro mehanički očistiti i dezinficirati</li>
@@ -249,5 +254,56 @@
 		</div>
 	</div>
 </section>
+
+<section>
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7784.494491139939!2d16.458778638727868!3d46.384575419404236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4768adbf5c85dcb7%3A0xa8da9fae0d418173!2sBioinstitut%20Ltd.!5e0!3m2!1sen!2shr!4v1579071336453!5m2!1sen!2shr" width="100%" height="700px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+	</div>
+</section>
+
+<footer>
+	<div class="footer" id="kontakt">
+		<div class="section-wrapper">
+			<div class="footer-col footer-col1">
+				<h3 class="footer-title">Bioinstitut d.o.o.</h3>
+				<p><strong>Služba dezinfekcije, dezinsekcije i deratizacije</strong></p>
+				<p>Dr. Rudolfa Steinera 7, HR-40000 Čakovec</p>
+				<p><strong>OIB: </strong>42588898414,</p>
+				<p><strong>Matični broj: </strong>3108589,</p>
+				<p><strong>Tr. sud u Varaždinu: </strong>070002678,</p>
+				<p><strong>Temeljni kapital: </strong>34.060.600,00 kn uplaćen u cijelosti</p>
+				<p><strong>Žiro račun (IBAN) Reiffeisenbank d.d. Čakovec: </strong>HR58 2484 0081 1003 2792 3</p>
+				<p><strong>Web: </strong><a href="http://www.bioinstitut.hr" target="blank">www.bioinstitut.hr</a></p>
+			</div>
+			<div class="footer-col footer-col2">
+				<h3 class="footer-title">Voditelj službe</h3>
+				<p>dr.sc. Slavica Mustač, med.vet.</p>
+				<p><strong>Email: </strong><a href="mailto:slavica.mustac@bioinstitut.hr">slavica.mustac@bioinstitut.hr</a></p>
+				<p><strong>Mob: </strong><a href="tel:+385981705443">+385 98 170 5443</a></p>
+
+				<h3 class="footer-title">Kontakt i informacije</h3>
+				<p class="footer-inner-col2 footer-info">
+					<a href="tel:098465485" class="icon tel">
+						<span>098 465 485</span>
+					</a><br>
+					<a href="mailto:ddd@bioinstitut.hr" class="icon mail">
+						<span>ddd@bioinstitut.hr</span>
+					</a>			
+				</p>				
+			</div>
+			<div class="footer-col footer-col3">
+				<a href="/upload/2019/01/dddcomhr_5c3ee88a96aab.pdf" target="_blank" class="btn-pdf">Preuzmi brošuru</a>
+			</div>
+			<div class="footer-inner-col3">
+					<p class="copy">© 2020. BIOINSTITUT d.o.o.</p>
+					<p class="marker">
+						<a href="https://marker.hr/izrada-web-stranica/" title="Izrada web stranica" target="_blank" >Izrada web stranica</a>
+					</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
 </body>
 </html>

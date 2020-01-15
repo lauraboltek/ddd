@@ -49,10 +49,22 @@ img{max-width: 100%; height: auto;}
     padding-top: 20px;
 }
 
+.header-info {
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    font-size: 15px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+}
+
 body{
     font: 18px/1.5 'Montserrat', sans-serif;
     background-color: #fff;
+    padding-top: 15px;
 }
+
 
 .container {
     width: @pageWidth;
@@ -71,11 +83,16 @@ h3 {
     font-size: 24px;
     line-height: 28px;
     padding-top: 45px;
-    padding: 24px 0 14px;
+    padding: 20px 0 14px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 p {
-    padding-bottom: 10px;
+    padding-bottom: 6px;
 }
 
 .page-intro{
@@ -84,59 +101,72 @@ p {
     height: 900px;
 }
 
-.circle-deratizacija{
+.info-con {
+    font-size: 24px;
+    margin-top: 65px;
+}
+
+.circle{
     position: absolute;
     height: 173px;
     width: 171px;
-    top: 120px;
-    left: -20px;
-    background-color: #FFF504;
+    top: 146px;
+    left: -33px;
+    background-color: #ffffff;
     border-radius: 50%;
     justify-content: center;
     display: flex;
     text-decoration: none;
+    &:before{
+        .pseudo;
+        .icon-rat;
+        font: 57px/47px @fonti;
+        top: 40px;
+        color: @blue;
+    }
+    &:hover{
+        background: yellow;
+        &:before{
+            color: #000;
+        }
+    }
 }
 
 .circle-dezinsekcija{
-    position: absolute;
-    height: 173px;
-    width: 171px;
-    top: 420px;
-    left: -20px;
-    background-color: #fff;
-    color: black;
-    border-radius: 50%;
-    justify-content: center;
-    display: flex;
-    text-decoration: none;
+    top: 414px;
+    left: -33px;
+    &:before{
+        .pseudo;
+        .icon-mosquito;
+        font: 63px/47px @fonti;
+        top: 40px;
+        color: @blue;
+    }
 }
 
 .circle-dezinfekcija{
-    position: absolute;
-    height: 173px;
-    width: 171px;
-    top: 120px;
+    top: 146px;
     left: 450px;
-    background-color: #fff;
-    color: black;
-    border-radius: 50%;
-    justify-content: center;
-    display: flex;
-    text-decoration: none;
+    &:before{
+        .pseudo;
+        .icon-shape2;
+        font: 63px/47px @fonti;
+        top: 32px;
+        color: @blue;
+    }
 }
 
 .circle-zastita{
-    position: absolute;
-    height: 173px;
-    width: 171px;
     top: 420px;
     left: 450px;
-    background-color: #fff;
-    color: black;
-    border-radius: 50%;
-    justify-content: center;
-    display: flex;
-    text-decoration: none;
+    &:before{
+        .pseudo;
+        .icon-bird;
+        font: 63px/47px @fonti;
+        top: 37px;
+        color: @blue;
+        
+}
 }
 
 .istrebljivac{
@@ -145,23 +175,30 @@ p {
     flex-shrink: 0;
     text-align: center;
     position: relative;
-    top: -200px;
-    right: -150px;
+    top: -221px;
+    right: 14px;
 }
 
 .nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1134px;
-    height: 22px;
-    display: flex;
-    font-family: Montserrat Bold;
     list-style: none;
-    margin: -50px 0px 0px 250px ;
+    max-width: 1134px;
     font-size: 18px;
-    font-weight: bold;
     line-height: 22px;
+    font-weight: 700;
+    position: absolute;
+    left: 170px;
+    right: 0;
+    top: 86px;
+    margin-left: auto;
+}
+
+.nav .a {
+    &:hover {
+        color: @blue;
+    }
 }
 
 .name {
@@ -174,6 +211,8 @@ p {
     padding-top: 20px;
     line-height: 26px;
     padding-bottom: 30px;
+    font-size: 18px;
+    padding-right: 215px;
 }
 
 .blue{
@@ -186,7 +225,7 @@ p {
     font-weight: bold;
     line-height: 29px;
     position: absolute;
-    top: 70px;
+    top: 85px;
     left: 0;
     right: 0;
     text-align: center;
@@ -206,38 +245,17 @@ p {
 
 .circle-title{
     position: absolute;
-    bottom: 40px;
+    bottom: 29px;
     left: 0;
     right: 0;
     text-align: center;
-    color: black;
-}
-
-.circle-title2{
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    align-items: center;
+    color: #0093DD;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .circle-title3{
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    align-items: center;
-}
-
-.circle-title4{
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    align-items: center;
+    bottom: 20px;
 }
 
 .shape2{
@@ -293,11 +311,12 @@ p {
     line-height: 21px;
     margin-right: 15px;
 }
+
 .list{
     list-style: none;
-    padding: 20px;
     margin: 0;
     font-size: 16px;
+    padding: 0 0 12px 23px;
 }
 .list li{
     position: relative;
@@ -313,11 +332,16 @@ p {
     background: #FFF504;
     border-radius: 100px;
 }
+
 .blue-section {
     display: flex;
     margin: auto;
     background-image: url(img/BG.jpg);
     padding: 100px;
+}
+
+.blue-section .list {
+    font-size: 18px;
 }
 
 .mjere {
@@ -361,6 +385,7 @@ p {
     text-transform: uppercase;
     display: flex;
     position: relative;
+    padding-top: 100px;
     &:before{
         .pseudo;
         width: 100px;
@@ -373,7 +398,7 @@ p {
         .icon-rat;
         font: 50px/50px @fonti;
         color: #fff;
-        margin-left: -120px;
+        margin-left: -136px;
         margin-top: -20px;
     }
 }
@@ -388,7 +413,6 @@ p {
     display: flex;
     margin: auto;
     position: relative;
-    margin-top: 80px;
     margin-left: 300px;
     padding-bottom: 100px;
 }
@@ -417,5 +441,75 @@ p {
     img{
         display: block;
         margin-bottom: 20px;
+        padding-top: 50px;
     }
+}
+
+.map {
+    height: 700px;
+    width: 100%;;
+    position: relative;
+}
+
+.footer {
+    background-image: url(img/BG.jpg);
+    color: #fff;
+}
+
+.footer-title {
+    font-size: 24px;
+    line-height: 24px;
+    color: #fff504;
+    padding: 75px 0 10px;
+}
+
+.footer-col {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-info{
+    .footer-title {
+        margin-bottom: 12px;
+    }
+    .icon:before{
+        color: #fff504;
+
+    }
+}
+
+.footer-inner-col2 a {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.btn-pdf {
+    width: 250px;
+    height: 70px;
+    box-shadow: 0 10px 40px 0 rgba(0,0,0,.3);
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0093dd;
+    font-weight: 700;
+    margin-top: 100px;
+    border-radius: 4px;
+}
+
+.footer-inner-col3 {
+    position: absolute;
+    bottom: 95px;
+    right: -150px;
+}
+
+.p {
+    font-size: 16px;
+    padding: 0 0 10px;
 }
