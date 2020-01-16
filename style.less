@@ -6,6 +6,9 @@ img{max-width: 100%; height: auto;}
 @blue: #0093DD;
 @lightblue: #F2F9FD;
 
+.page-wrapper{
+    overflow: hidden;
+}
 .pseudo{
     content: "";
     display: block;
@@ -17,18 +20,21 @@ img{max-width: 100%; height: auto;}
 .icon-telephone {
     content: "\e901";
   } 
-  .icon-rat {
+.icon-rat {
     content: "\e902";
   } 
-  .icon-bird {
+.icon-bird {
     content: "\e903";
 }
-  .icon-mosquito {
+.icon-mosquito {
     content: "\e904";
   } 
-  .icon-shape2 {
+.icon-shape2 {
       content: "\e905";
   }
+.icon-pdf {
+    content: "\e906"; 
+}
 
 
 @font-face {
@@ -40,7 +46,7 @@ img{max-width: 100%; height: auto;}
   }
 
   .section-wrapper{
-      width: @pageWidth;
+    width: @pageWidth;
     margin: auto;
   }
   
@@ -51,12 +57,16 @@ img{max-width: 100%; height: auto;}
 
 .header-info {
     position: absolute;
-    top: 25px;
+    top: 15px;
     right: 0px;
     font-size: 15px;
     line-height: 19px;
     display: flex;
     align-items: center;
+}
+
+.header-info a {
+    font-weight: normal;
 }
 
 body{
@@ -92,13 +102,13 @@ a {
 }
 
 p {
-    padding-bottom: 6px;
+    padding-bottom: 5px;
 }
 
 .page-intro{
     padding-top: 200px;
     background: linear-gradient(180deg, #FFFFFF 0%, #E5F0F6 100%);
-    height: 900px;
+    height: 750px;
 }
 
 .info-con {
@@ -191,11 +201,11 @@ p {
     position: absolute;
     left: 170px;
     right: 0;
-    top: 86px;
+    top: 78px;
     margin-left: auto;
 }
 
-.nav .a {
+.nav a {
     &:hover {
         color: @blue;
     }
@@ -205,6 +215,9 @@ p {
     font-size: 36px;
     width: 600px;
     height: 44px;
+    font-weight: 400;
+    line-height: 53px;
+    padding-bottom: 22px;
 }
 
 .info{
@@ -300,10 +313,15 @@ p {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    &:hover {
+        color: @blue;
+    }
 }
 .mail:before{
     .icon-envelope;
     color: #0093dd;
+    position: absolute;
+    left: -5px;
 }
 
 .tel:before{
@@ -407,13 +425,26 @@ p {
 .section-title-dezinfekcija:before{.icon-shape2;}
 .section-title-zastita:before{.icon-bird;}
 
+.section-title-warning {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.section-title-warning:before{
+    .pseudo;
+    display: block;
+    width: 100px;
+    height: 92px;
+    background: url(img/warning.svg);
+    left: -136px;
+}
 
 .section-wrapper {
     justify-content: space-between;
     display: flex;
     margin: auto;
     position: relative;
-    margin-left: 300px;
     padding-bottom: 100px;
 }
 
@@ -441,7 +472,8 @@ p {
     img{
         display: block;
         margin-bottom: 20px;
-        padding-top: 50px;
+        margin-top: 40px;
+        box-shadow: 0 10px 40px 0 rgba(0,0,0,.3);
     }
 }
 
@@ -464,8 +496,13 @@ p {
 }
 
 .footer-col {
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
     line-height: 24px;
+    padding: 5px;
+    padding-right: 138px;
+    padding-top: 25px;
 }
 
 .footer a {
@@ -479,8 +516,15 @@ p {
     }
     .icon:before{
         color: #fff504;
-
+        font-size: 14px;
+        line-height: 14px;
+        margin-left: 4px;
+        margin-top: 3px;
     }
+}
+
+.footer-col1 {
+    margin-right: 0;
 }
 
 .footer-inner-col2 a {
@@ -497,19 +541,276 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #0093dd;
+    color: @blue;
     font-weight: 700;
-    margin-top: 100px;
+    margin-top: 75px;
+    margin-right: -150px;
     border-radius: 4px;
+    position: relative;
+    &:hover {
+        color: #00bfff;
+    }
+
+    span{
+        position: relative;
+        padding-left: 30px;
+        &:before{
+            .pseudo;
+            .icon-pdf;
+            font: 20px/20px @fonti;
+            width: 10px;
+            height: 10px;
+            left: 0;
+        }
+    }
 }
 
 .footer-inner-col3 {
     position: absolute;
     bottom: 95px;
-    right: -150px;
+    right: -10px;
+    text-align: right;
 }
 
 .p {
     font-size: 16px;
     padding: 0 0 10px;
+}
+
+.marker a {
+    text-decoration: none;
+    text-align: right;
+    font-size: 16px;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.footer-inner-col3 p {
+    padding: 0px 0px 2px;
+}
+
+.footer-col3 a {
+    color: @blue;
+    text-decoration: none;
+}
+
+.footer-col2 .mail {
+    color: #FFF;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.footer-col a[href^=tel] {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 1440px) {    
+    .section-wrapper{width: 100%;}
+    .container{
+        width: 100%;
+        position: absolute;
+    }
+    
+    
+    .istrebljivac{
+        img{
+        height: 510px; 
+        width: auto;
+        position: relative;
+        top: 115px;
+        left: -115px;
+        }
+    }
+    
+    
+    .section-title-warning{
+        display: block;
+        &:before{
+            position: relative;
+            left: auto;
+            display: block;
+            background-size: contain;
+            width: 80px;
+            height: 73px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    .logo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .header-info {
+        font-size: 14px;
+        padding-right: 30px;
+    }
+
+    .nav {
+        font-size: 14px;
+        padding-right: 30px;
+    }
+
+
+    h2.name {
+        font-size: 24px;
+        line-height: 29px;
+        padding-left: 30px;
+    }
+
+    .wrapper {
+        margin-left: 30px;
+    }
+
+    .section-wrapper {
+        padding-left: 30px;
+        padding-bottom: 55px;
+    }
+
+    .left-side {
+        padding-right: 40px;
+    }
+
+    .list {
+        font-size: 14px;
+        line-height: 20px;
+        padding-right: 260px;
+    }
+
+    .right-side{
+        width: 400px;
+        margin-right: 30px;
+    }
+
+    .info {
+        line-height: 22px;
+        font-size: 14px;
+        padding-left: 30px;
+    }
+
+    .icon-title {
+        font-size: 20px;
+        top: 160px;
+        left: -218px;
+    }
+
+    .info-con {
+        margin-top: 30px;
+        font-size: 18px;
+        padding-left: 30px;
+    }
+
+    .page-intro {
+        height: 650px;
+    }
+
+    .blue-section {
+        padding-left: 30px;
+        padding-top: 50px;
+        padding-bottom: 64px;
+    }
+
+    .mjere {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .section-title {
+        font-size: 32px;
+        line-height: 39px;
+        padding-left: 150px;
+        padding-top: 60px;
+        margin-bottom: 20px;
+        &:before {
+            width: 65px;
+            height: 65px;
+            font: 18px/13px @fonti;
+        }
+    }
+
+    .section-title:before {
+        margin-left: -154px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .blue-section .list {
+        font-size: 14px;
+        left: 20px;
+        line-height: 22px;
+    }
+
+    .footer-col {
+        font-size: 14px;
+        padding-top: 0;
+    }
+
+    .footer-inner-col3 {
+        right: 30px;
+        bottom: 60px;
+    }
+
+    .btn-pdf {
+        width: 210px;
+        height: 50px;
+        position: absolute;
+        right: 184px;
+        top: -14px;
+    }
+
+    .istrebljivac {
+        width: 400px;
+        right: 75px;
+    }
+
+    .circle {
+        height: 126px;
+        width: 127px;
+    }
+
+    .circle-deratizacija {
+        top: 215px;
+        left: -147px;
+    }
+
+    .circle-dezinsekcija {
+        left: -147px;
+    }
+
+    .circle-dezinfekcija {
+        top: 215px;
+        left: 188px;
+    }
+
+    .circle-zastita {
+        left: 188px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and(max-width: 800px) {
+    .container{
+        width: 500px;
+    }
 }
