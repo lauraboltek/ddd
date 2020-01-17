@@ -36,6 +36,12 @@ img {
 .icon-pdf {
   content: "\e906";
 }
+.icon-arrow {
+  content: "\e907";
+}
+.icon-rarrow {
+  content: "\e908";
+}
 @font-face {
   font-family: 'icomoon';
   src: url('fonts/icomoon.woff?a2qhcp') format('woff');
@@ -95,7 +101,11 @@ p {
 .page-intro {
   padding-top: 200px;
   background: linear-gradient(180deg, #FFFFFF 0%, #E5F0F6 100%);
-  height: 750px;
+  height: 860px;
+}
+.o-nama {
+  position: relative;
+  top: 125px;
 }
 .info-con {
   font-size: 24px;
@@ -173,7 +183,7 @@ p {
   flex-shrink: 0;
   text-align: center;
   position: relative;
-  top: -221px;
+  top: -100px;
   right: 14px;
 }
 .nav {
@@ -196,7 +206,6 @@ p {
 }
 .name {
   font-size: 36px;
-  width: 600px;
   height: 44px;
   font-weight: 400;
   line-height: 53px;
@@ -218,7 +227,7 @@ p {
   font-weight: bold;
   line-height: 29px;
   position: absolute;
-  top: 85px;
+  top: 74px;
   left: 0;
   right: 0;
   text-align: center;
@@ -382,7 +391,7 @@ p {
   font: 50px/50px "icomoon";
   color: #fff;
   margin-left: -136px;
-  margin-top: -20px;
+  margin-top: 10px;
 }
 .section-title-dezinsekcija:before {
   content: "\e904";
@@ -406,6 +415,7 @@ p {
   height: 92px;
   background: url(img/warning.svg);
   left: -136px;
+  background-repeat: no-repeat;
 }
 .section-wrapper {
   justify-content: space-between;
@@ -439,6 +449,56 @@ p {
   margin-top: 40px;
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.3);
 }
+.imgs-slider {
+  position: relative;
+}
+
+.slick-arrow {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+.slick-prev {
+  position: absolute;
+  border-style: none;
+  right: 310px;
+  bottom: 0px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #0093DD;
+}
+.slick-prev:before {
+  content: "";
+  display: block;
+  position: absolute;
+  content: "\e907";
+  font: 30px/25px "icomoon";
+  top: 25px;
+  left: 25px;
+  color: #fff;
+}
+.slick-next {
+  position: absolute;
+  border-style: none;
+  bottom: 0px;
+  right: 215px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #0093DD;
+}
+.slick-next:before {
+  content: "";
+  display: block;
+  position: absolute;
+  content: "\e908";
+  font: 30px/25px "icomoon";
+  top: 25px;
+  left: 31px;
+  color: #fff;
+}
+
 .map {
   height: 700px;
   width: 100%;
@@ -460,8 +520,6 @@ p {
   font-size: 16px;
   line-height: 24px;
   padding: 5px;
-  padding-right: 138px;
-  padding-top: 25px;
 }
 .footer a {
   color: #fff;
@@ -485,6 +543,13 @@ p {
   font-size: 16px;
   font-weight: normal;
 }
+
+.footer-col .footer-col2 {
+  position: absolute;
+  bottom: 105px;
+  left: 600px;
+}
+
 .btn-pdf {
   width: 250px;
   height: 70px;
@@ -496,7 +561,6 @@ p {
   color: #0093DD;
   font-weight: 700;
   margin-top: 75px;
-  margin-right: -150px;
   border-radius: 4px;
   position: relative;
 }
@@ -541,6 +605,10 @@ p {
 .footer-col3 a {
   color: #0093DD;
   text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 30px;
+
 }
 .footer-col2 .mail {
   color: #FFF;
@@ -558,14 +626,13 @@ p {
   }
   .container {
     width: 100%;
-    position: absolute;
   }
   .istrebljivac img {
     height: 510px;
     width: auto;
     position: relative;
-    top: 115px;
-    left: -115px;
+    top: 10px;
+    left: -78px;
   }
   .section-title-warning {
     display: block;
@@ -578,6 +645,8 @@ p {
     width: 80px;
     height: 73px;
     margin-bottom: 10px;
+    margin-left: 15px;
+    background-repeat: no-repeat;
   }
   .logo {
     width: 90px;
@@ -602,18 +671,25 @@ p {
   .section-wrapper {
     padding-left: 30px;
     padding-bottom: 55px;
+    padding-bottom: 30px;
   }
-  .left-side {
-    padding-right: 40px;
+  .o-nama {
+    position: relative;
+    top: 0px;
   }
   .list {
     font-size: 14px;
     line-height: 20px;
-    padding-right: 260px;
   }
+  
   .right-side {
     width: 400px;
     margin-right: 30px;
+  }
+  .right-side img {
+    height: 500px;
+    width: 400px;
+    margin-top: 40px;
   }
   .info {
     line-height: 22px;
@@ -622,8 +698,8 @@ p {
   }
   .icon-title {
     font-size: 20px;
-    top: 160px;
-    left: -218px;
+    top: 55px;
+    left: -130px;
   }
   .info-con {
     margin-top: 30px;
@@ -647,15 +723,17 @@ p {
     line-height: 39px;
     padding-left: 150px;
     padding-top: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
+  
   .section-title:before {
     width: 65px;
     height: 65px;
-    font: 18px/13px "icomoon";
-  }
-  .section-title:before {
+    font: 34px/13px "icomoon";
     margin-left: -154px;
+    position: relative;
+    margin-right: 30px;
+    flex-shrink: 0;
   }
   h3 {
     font-size: 18px;
@@ -672,6 +750,7 @@ p {
   .footer-col {
     font-size: 14px;
     padding-top: 0;
+    padding-right: 134px;
   }
   .footer-inner-col3 {
     right: 30px;
@@ -688,27 +767,214 @@ p {
     width: 400px;
     right: 75px;
   }
+  .circle-title {
+    font-size: 13px;
+    line-height: 16px;
+    bottom: 33px;
+  }
   .circle {
     height: 126px;
     width: 127px;
   }
   .circle-deratizacija {
-    top: 215px;
-    left: -147px;
+    top: 98px;
+    left: -110px;
+  }
+  .circle-deratizacija:before {
+    top: 30px;
   }
   .circle-dezinsekcija {
-    left: -147px;
+    left: -110px;
+    top: 300px;
+  }
+  .circle-dezinsekcija:before {
+    top: 30px;
   }
   .circle-dezinfekcija {
-    top: 215px;
-    left: 188px;
+    top: 98px;
+    left: 229px;
+  }
+  .circle-dezinfekcija:before {
+    top: 18px;
+    width: 65px;
+    height: 65px;
+  }
+  .circle-title3 {
+    top: 60px;
   }
   .circle-zastita {
-    left: 188px;
+    left: 229px;
+    top: 300px;
   }
+  .circle-zastita:before {
+    top: 26px;
+  }
+  .circle-title4 {
+    top: 70px;
+  }
+  .circle:before {
+    font: 40px/35px "icomoon";
+  }
+  .slick-prev {
+    bottom: 0;
+    right: 210px;
+    height: 50px;
+    width: 50px;
+  }
+  .slick-prev:before {
+    content: "";
+    display: block;
+    position: absolute;
+    content: "\e907";
+    font: 23px/22px "icomoon";
+    top: 15px;
+    left: 16px;
+    color: #fff;
+  }
+  .slick-next {
+    bottom: 0;
+    right: 148px;
+    height: 50px;
+    width: 50px;
+  }
+  .slick-next:before {
+    content: "";
+    display: block;
+    position: absolute;
+    content: "\e908";
+    font: 23px/22px "icomoon";
+    top: 15px;
+    left: 22px;
+    color: #fff;
+  }
+
 }
-@media screen and (max-width: 800px) {
-  .container {
-    width: 500px;
+
+
+@media screen and (max-width: 925px) {
+  .section-wrapper {
+    width: 100%;
   }
+  .container {
+    width: 100%;
+  }
+
+.nav {
+  font-size: 12px;
+  line-height: 15px;
+  position: absolute;
+  top: 55px;
+  left: 120px;
+}
+
+.header-info {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.tel:before {
+  font-size: 16px;
+  left: 6px;
+  top: -2px;
+}
+
+.mail:before {
+  font-size: 13px;
+  left: 6px;
+  top: -2px;
+}
+
+h2.name {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+p.info {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+h2.icon-title {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.info-con {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+h2.mjere {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.list {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.section-title {
+  font-size: 26px;
+  line-height: 32px;
+  padding-top: 50px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.list li:before {
+  width: 7px;
+  height: 7px;
+}
+
+.list-y li:before {
+  width: 7px;
+  height: 7px;
+}
+
+.section-title-warning:before {
+  width: 63px;
+  height: 58px;
+  background-repeat: no-repeat;
+}
+
+.footer-title {
+  padding-top: 30px;
+}
+
+.section {
+  padding-top: 0;
+}
+
+.btn-pdf {
+  position: absolute;
+  top: -40px;
+  right: 30px;
+}
+
+.footer {
+  padding-top: 30px;
+}
+
+.footer-inner-col3 {
+  bottom: 30px;
+  font-size: 14px;
+  line-height: 24px;
+}
+}
+
+
+@media screen and (max-width: 800px) {
+  .section-wrapper {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+
+
+
 }
