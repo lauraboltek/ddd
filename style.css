@@ -95,16 +95,17 @@ a {
   color: black;
 }
 p {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 .page-intro {
   padding-top: 200px;
   background: linear-gradient(180deg, #FFFFFF 0%, #E5F0F6 100%);
-  height: 860px;
+  height: auto;
 }
 .o-nama {
   position: relative;
   top: 125px;
+  height: auto;
 }
 .info-con {
   font-size: 24px;
@@ -182,7 +183,7 @@ p {
   flex-shrink: 0;
   text-align: center;
   position: relative;
-  top: -70px;
+  top: -95px;
   right: 0px;
 }
 .nav {
@@ -199,6 +200,9 @@ p {
   right: 0;
   top: 78px;
   margin-left: auto;
+}
+.btn-toggle-nav {
+  display: none;
 }
 .nav a:hover {
   color: #0093DD;
@@ -443,6 +447,7 @@ p {
 }
 .right-side {
   width: 600px;
+  height: auto;
   flex-shrink: 0;
   flex-grow: 0;
   padding-top: 20px;
@@ -513,16 +518,16 @@ p {
   font-size: 24px;
   line-height: 24px;
   color: #fff504;
-  padding: 75px 0 10px;
+  padding: 50px 0 10px;
+}
+.footer-col2 {
+  padding-right: 125px;
 }
 .footer-col {
   display: flex;
   flex-direction: column;
   font-size: 16px;
   line-height: 24px;
-  padding: 5px;
-  padding-right: 138px;
-  padding-top: 25px;
 }
 .footer a {
   color: #fff;
@@ -539,7 +544,7 @@ p {
   margin-top: 3px;
 }
 .footer-col1 {
-  margin-right: 0;
+  margin-right: 20px;
 }
 .footer-inner-col2 a {
   color: #FFF;
@@ -651,12 +656,13 @@ p {
   }
   .header-info {
     font-size: 14px;
-    padding-right: 30px;
+    padding-right: 15px;
   }
   .nav {
     font-size: 14px;
-    padding-right: 30px;
+    padding-right: 15px;
     top: 50px;
+    margin-left: 60px;
   }
   h2.name {
     font-size: 24px;
@@ -680,7 +686,7 @@ p {
   }
   .right-side {
     width: 400px;
-    margin-right: 30px;
+    margin-right: 20px;
   }
   .info {
     line-height: 22px;
@@ -696,10 +702,10 @@ p {
   .info-con {
     margin-top: 30px;
     font-size: 18px;
-    padding-left: 30px;
+    padding-left: 20px;
   }
   .page-intro {
-    height: 650px;
+    height: auto;
   }
   .blue-section {
     padding-top: 50px;
@@ -743,18 +749,20 @@ p {
   .footer-col {
     font-size: 14px;
     padding-top: 0;
-    padding-right: 134px;
   }
   .footer-inner-col3 {
     right: 30px;
-    bottom: 60px;
+    bottom: 30px;
   }
   .btn-pdf {
-    width: 210px;
-    height: 50px;
+    width: 170px;
+    height: 45px;
     position: absolute;
     right: 184px;
-    top: -14px;
+    top: -25px;
+  }
+  .btn-pdf span {
+    font-size: 12px;
   }
   .istrebljivac {
     width: 400px;
@@ -847,6 +855,9 @@ p {
     margin: auto;
     display: flex;
   }
+  body {
+    padding-top: 15px;
+  }
   .logo {
     height: 70px;
     width: 70px;
@@ -860,7 +871,7 @@ p {
     left: 0px;
   }
   .page-intro {
-    height: 520px;
+    height: auto;
     padding-top: 150px;
   }
   .nav {
@@ -933,6 +944,7 @@ p {
     padding-right: 20px;
     padding-bottom: 20px;
     padding-top: 10px;
+    padding-left: 20px;
   }
   .section-title {
     padding-left: 90px;
@@ -947,10 +959,6 @@ p {
   }
   .h3 {
     padding: 0px;
-  }
-  .right-side {
-    margin-right: 40px;
-    height: 300px;
   }
   .section-title {
     font-size: 26px;
@@ -1002,17 +1010,19 @@ p {
   .header-info {
     font-size: 12px;
     line-height: 15px;
+    padding-right: 25px;
+    top: 10px;
   }
   .page-intro {
     padding-top: 140px;
-    height: 570px;
+    height: auto;
   }
   .nav {
     font-size: 12px;
     line-height: 15px;
     position: absolute;
     right: 10px;
-    left: 99px;
+    left: 85px;
     top: 46px;
   }
   h2.name {
@@ -1036,6 +1046,9 @@ p {
   .istrebljivac img {
     height: 420px;
     top: 60px;
+  }
+  .info-con {
+    font-size: 16px;
   }
   .circle {
     height: 93px;
@@ -1088,7 +1101,6 @@ p {
     height: 60px;
     width: 60px;
     font: 26px/13px "icomoon";
-    margin-right: 15px;
   }
   h3 {
     padding-top: 20px;
@@ -1101,7 +1113,6 @@ p {
   .right-side {
     position: 10px;
     width: 290px;
-    height: 435px;
   }
   .section-title {
     font-size: 26px;
@@ -1125,5 +1136,615 @@ p {
     width: 40px;
     height: 40px;
     right: 100px;
+  }
+  .footer-title {
+    padding-top: 40px;
+    padding-left: 0px;
+  }
+  .footer-col1 {
+    padding-right: 0px;
+  }
+  .footer-col2 {
+    padding-right: 125px;
+  }
+  .footer-inner-col3 {
+    padding-right: 0px;
+    bottom: 20px;
+    font-size: 13px;
+  }
+  .footer-inner-col2 a {
+    font-size: 13px;
+  }
+  .footer-title {
+    font-size: 22px;
+  }
+  .footer p {
+    font-size: 13px;
+  }
+  .btn-pdf {
+    top: -35px;
+    right: 170px;
+  }
+  .marker a {
+    font-size: 13px;
+  }
+  p {
+    padding-bottom: 5px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    padding-top: 5px;
+    margin: auto;
+    display: flex;
+  }
+  .nav {
+    font-size: 11px;
+    line-height: 12px;
+    left: 30px;
+  }
+  .header-info {
+    font-size: 11px;
+  }
+  .page-intro {
+    height: auto;
+  }
+  h2.name {
+    font-size: 20px;
+  }
+  .p {
+    font-size: 13px;
+  }
+  p.info {
+    padding-right: 86px;
+  }
+  .istrebljivac {
+    width: 260px;
+    top: -150px;
+  }
+  h2.icon-title {
+    font-size: 16px;
+    top: 110px;
+  }
+  .circle-dezinfekcija {
+    left: 165px;
+  }
+  .circle-zastita {
+    left: 165px;
+  }
+  .circle-dezinsekcija {
+    left: -80px;
+  }
+  .circle-deratizacija {
+    left: -80px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+  .mjere {
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  .list li:before {
+    width: 7px;
+    height: 7px;
+    top: 6px;
+  }
+  .left-side {
+    padding-right: 25px;
+  }
+  .footer-title {
+    font-size: 20px;
+  }
+  .footer p {
+    font-size: 11px;
+  }
+  .marker a {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 735px) {
+  .container {
+    padding-top: 5px;
+    margin: auto;
+    display: flex;
+  }
+  .info-con {
+    margin-top: 10px;
+  }
+  h2.icon-title {
+    font-size: 15px;
+  }
+  .circle {
+    height: 85px;
+    width: 85px;
+  }
+  .circle-title {
+    font-size: 10px;
+  }
+  .circle:before {
+    font: 32px/9px "icomoon";
+  }
+  .circle-title3 {
+    top: 40px;
+  }
+  .circle-title4 {
+    top: 50px;
+  }
+  .istrebljivac img {
+    left: -25px;
+  }
+  .circle-dezinfekcija {
+    left: 182px;
+    top: 150px;
+  }
+  .circle-zastita {
+    left: 182px;
+    top: 300px;
+  }
+  .circle-deratizacija {
+    left: -65px;
+    top: 150px;
+  }
+  .circle-dezinsekcija {
+    left: -65px;
+    top: 300px;
+  }
+  .footer-col1 {
+    padding-right: 10px;
+  }
+  .footer-col2 {
+    padding-right: 180px;
+  }
+  .btn-pdf {
+    width: 170px;
+    height: 45px;
+    right: 175px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    padding-top: 5px;
+    margin: auto;
+    display: flex;
+    padding-right: 20px;
+  }
+  .nav {
+    font-size: 10px;
+  }
+  .page-intro {
+    padding-top: 100px;
+  }
+  .o-nama {
+    padding-right: 37px;
+  }
+  .info {
+    padding-bottom: 20px;
+  }
+  .info-con {
+    font-size: 14px;
+  }
+  .istrebljivac img {
+    height: 360px;
+    top: 140px;
+    left: -20px;
+  }
+  h2.icon-title {
+    right: 50px;
+    top: 165px;
+  }
+  .icon {
+    padding-left: 30px;
+  }
+  p.info {
+    padding-right: 70px;
+  }
+  .info {
+    padding-left: 15px;
+  }
+  h2.name {
+    line-height: 24px;
+    padding-left: 15px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+  .circle-dezinfekcija {
+    left: 185px;
+    top: 215px;
+  }
+  .circle-zastita {
+    left: 185px;
+    top: 350px;
+  }
+  .circle-deratizacija {
+    left: -51px;
+    top: 215px;
+  }
+  .circle-dezinsekcija {
+    left: -51px;
+    top: 350px;
+  }
+  .left-side {
+    padding-right: 25px;
+  }
+  .list {
+    padding-left: 0;
+  }
+  .list li {
+    padding-left: 20px;
+  }
+  .list li:before {
+    top: 7px;
+  }
+  .btn-pdf {
+    width: 140px;
+    height: 35px;
+    right: 165px;
+  }
+  .btn-pdf span {
+    font-size: 10px;
+  }
+  .btn-pdf span:before {
+    font: 18px/20px "icomoon";
+  }
+  .section-wrapper {
+    padding-left: 15px;
+  }
+  .footer-title {
+    font-size: 14px;
+  }
+  .footer p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .footer-col {
+    line-height: 22px;
+  }
+  .footer-col1 {
+    margin-right: 0;
+    padding-right: 15px;
+  }
+  .footer-col2 {
+    padding-right: 210px;
+  }
+  .marker a {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container {
+    padding-top: 5px;
+    margin: auto;
+    display: flex;
+  }
+  .section-wrapper {
+    padding-left: 15px;
+    display: block;
+  }
+  .o-nama {
+    padding-right: 51px;
+  }
+  h2.name {
+    font-size: 17px;
+  }
+  .nav {
+    left: 10px;
+  }
+  .info-con {
+    font-size: 16px;
+    padding-left: 0;
+    padding-top: 10px;
+    line-height: 24px;
+  }
+  .icon {
+    padding-left: 25px;
+  }
+  .tel {
+    margin-right: 10px;
+  }
+  .tel:before {
+    width: 18px;
+    height: 18px;
+    margin-right: 11px;
+  }
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+  .circle:before {
+    font: 28px/3px "icomoon";
+  }
+  .circle-title {
+    bottom: 19px;
+  }
+  .circle-title3 {
+    top: 36px;
+  }
+  .circle-title4 {
+    top: 47px;
+  }
+  .istrebljivac {
+    width: 250px;
+  }
+  .p {
+    font-size: 12px;
+  }
+  .list {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  p.info {
+    padding-right: 0;
+  }
+  h2.mjere {
+    font-size: 20px;
+  }
+  .blue-section .list {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .section-title {
+    padding-top: 40px;
+    padding-left: 78px;
+  }
+  .section-title:before {
+    top: 52px;
+  }
+  .footer-title {
+    font-size: 14px;
+  }
+  .footer p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .footer-col {
+    line-height: 22px;
+  }
+  .footer-col1 {
+    margin-right: 0;
+    padding-right: 15px;
+  }
+  .footer-col2 {
+    padding-right: 210px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    padding-top: 5px;
+    margin: auto;
+    display: block;
+    padding: 0 15px;
+  }
+  .btn-toggle-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 47px;
+    height: 47px;
+    background: #0093DD;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    font-size: 0;
+    z-index: 101;
+  }
+  .btn-toggle-nav span {
+    display: blocK;
+    width: 23px;
+    height: 3px;
+    background: #fff;
+    position: relative;
+  }
+  .btn-toggle-nav span:before,
+  .btn-toggle-nav span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+  }
+  .btn-toggle-nav span:before {
+    top: -6px;
+  }
+  .btn-toggle-nav span:after {
+    bottom: -6px;
+  }
+  p.info {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .info {
+    padding: 0;
+  }
+  .o-nama {
+    padding-right: 0;
+  }
+  .page-intro {
+    padding-right: 0px;
+    padding-top: 95px;
+  }
+  .istrebljivac {
+    height: 400px;
+    top: -100px;
+    right: -35px;
+  }
+  .logo {
+    width: 65px;
+    height: 65px;
+  }
+  .wrapper {
+    margin-left: 0px;
+  }
+  .istrebljivac img {
+    height: 340px;
+    left: 0;
+    top: 120px;
+  }
+  .circle {
+    width: 75px;
+    height: 75px;
+  }
+  .circle:before {
+    font: 31px/12px "icomoon";
+  }
+  .circle-zastita:before {
+    top: 30px;
+  }
+  .circle-dezinfekcija:before {
+    top: 30px;
+  }
+  h2.icon-title {
+    font-size: 18px;
+    line-height: 22PX;
+    right: 0;
+    top: 145px;
+  }
+  .circle-dezinfekcija {
+    top: 190px;
+    left: 199px;
+  }
+  .circle-zastita {
+    left: 199px;
+    top: 315px;
+  }
+  .circle-deratizacija {
+    top: 190px;
+    left: -24px;
+  }
+  .circle-dezinsekcija {
+    top: 315px;
+    left: -24px;
+  }
+  .circle-title {
+    display: none;
+  }
+  .header-info {
+    display: none;
+    font-size: 10px;
+  }
+  .nav {
+    display: none;
+    font-size: 9px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    z-index: 100;
+    margin: 0;
+  }
+  .active-nav .nav {
+    display: block;
+  }
+  .active-nav .btn-toggle-nav span {
+    background: transparent;
+    transform: rotate(45deg);
+  }
+  .active-nav .btn-toggle-nav span:before,
+  .active-nav .btn-toggle-nav span:after {
+    top: auto;
+    bottom: auto;
+  }
+  .active-nav .btn-toggle-nav span:after {
+    transform: rotate(90deg);
+  }
+  .active-nav .header-info {
+    display: block;
+    background: #0093DD;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  h2.name {
+    font-size: 24px;
+    line-height: 29px;
+    padding-left: 0;
+    padding-bottom: 70px;
+  }
+  .info-con {
+    font-size: 16px;
+    line-height: 30px;
+    display: block;
+    align-items: center;
+  }
+  h2.mjere {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .blue-section {
+    display: block;
+    padding: 32px 15px 35px;
+  }
+  .service-content {
+    display: block;
+  }
+  .service-content ul {
+    margin-right: 0px;
+    display: block;
+  }
+  .list li {
+    padding-right: 0;
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .section-title:before {
+    height: 50px;
+    width: 50px;
+    font: 22px/6px "icomoon";
+  }
+  .section-title {
+    padding-left: 65px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  h3 {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .left-side {
+    padding-right: 20px;
+  }
+  .list {
+    font-size: 11px;
+  }
+  .list li:before {
+    width: 8px;
+    height: 8px;
+    top: 5px;
+  }
+  .section-title-warning:before {
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 40px;
+  }
+  .footer p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .footer-col2 {
+    padding-right: 190px;
+  }
+  .marker a {
+    font-size: 12px;
+  }
+  .right-side img {
+    width: 250px;
+  }
+  .right-side {
+    padding-left: 25px;
   }
 }
