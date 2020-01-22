@@ -1577,9 +1577,13 @@ p {
   .logo {
     width: 65px;
     height: 65px;
+    margin-left: 15px;
   }
   .wrapper {
     margin-left: 0px;
+  }
+  .section-wrapper {
+    padding-bottom: 20px;
   }
   .istrebljivac img {
     height: 340px;
@@ -1598,6 +1602,9 @@ p {
   }
   .circle-dezinfekcija:before {
     top: 30px;
+  }
+  .info-con a {
+    display: block;
   }
   h2.icon-title {
     font-size: 18px;
@@ -1630,15 +1637,17 @@ p {
   }
   .nav {
     display: none;
-    font-size: 9px;
+    font-size: 14px;
+    line-height: 31px;
     position: fixed;
-    top: 0;
+    top: 100px;
     right: 0;
     bottom: 0;
-    left: 0;
-    background: #fff;
+    left: 0px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #E5F0F6 100%);
     z-index: 100;
     margin: 0;
+    padding-left: 15px;
   }
   .active-nav .nav {
     display: block;
@@ -1655,17 +1664,34 @@ p {
   .active-nav .btn-toggle-nav span:after {
     transform: rotate(90deg);
   }
-  .active-nav .header-info {
+  .active-nav .footer-inner-col2 {
     display: block;
-    background: #0093DD;
+    background-image: url(img/BG.jpg);
     color: #fff;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+    top: 400px;
+    z-index: 101;
+    font-size: 16px;
+    line-height: 35px;
+    padding: 15px 15px;
+  }
+  .active-nav .footer-inner-col2 a {
+    font-size: 16px;
+    padding-left: 40px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .active-nav .footer-info .icon:before {
+    font-size: 16px;
+  }
+  .active-nav .logo {
+    z-index: 101;
   }
   h2.name {
-    font-size: 24px;
+    font-size: 25px;
     line-height: 29px;
     padding-left: 0;
     padding-bottom: 70px;
@@ -1675,6 +1701,7 @@ p {
     line-height: 30px;
     display: block;
     align-items: center;
+    z-index: 100;
   }
   h2.mjere {
     font-size: 20px;
@@ -1682,7 +1709,7 @@ p {
   }
   .blue-section {
     display: block;
-    padding: 32px 15px 35px;
+    padding: 20px 15px 20px;
   }
   .service-content {
     display: block;
@@ -1690,6 +1717,10 @@ p {
   .service-content ul {
     margin-right: 0px;
     display: block;
+    width: 100%;
+  }
+  ul.list {
+    padding: 0px;
   }
   .list li {
     padding-right: 0;
@@ -1708,7 +1739,7 @@ p {
     line-height: 29px;
   }
   h3 {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 25px;
   }
   .p {
@@ -1726,23 +1757,63 @@ p {
     height: 8px;
     top: 5px;
   }
+  .list-y li:before {
+    width: 5px;
+    height: 5px;
+    border: 3px solid black;
+  }
   .section-title-warning:before {
     background-repeat: no-repeat;
     width: 44px;
     height: 40px;
   }
   .footer p {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 20px;
   }
-  .footer-col2 {
-    padding-right: 190px;
+  .footer-col {
+    padding: 0px;
+  }
+  .footer-title {
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .footer-col3 {
+    padding-bottom: 0;
+    padding-left: 15px;
+    position: relative;
+    padding-bottom: 25px;
+  }
+  .footer-info .icon:before {
+    margin-left: 0;
+  }
+  .btn-pdf {
+    width: 290px;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    right: 0;
+    position: relative;
+  }
+  .btn-pdf span {
+    font-size: 14px;
+  }
+  .footer-inner-col3 {
+    right: 150px;
+    text-align: left;
+  }
+  .footer-inner-col3 p {
+    font-size: 12px;
+    line-height: 20px;
   }
   .marker a {
     font-size: 12px;
   }
   .right-side img {
-    width: 250px;
+    width: 340px;
+    margin-top: 0;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3);
   }
   .right-side {
     padding-left: 25px;
