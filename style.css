@@ -481,7 +481,7 @@ p {
   display: block;
   position: absolute;
   content: "\e907";
-  font: 30px/25px "icomoon";
+  font: 30px/7px "icomoon";
   left: 25px;
   color: #fff;
 }
@@ -500,7 +500,7 @@ p {
   display: block;
   position: absolute;
   content: "\e908";
-  font: 30px/25px "icomoon";
+  font: 30px/47px "icomoon";
   left: 31px;
   color: #fff;
   top: 15px;
@@ -509,6 +509,7 @@ p {
   height: 700px;
   width: 100%;
   position: relative;
+  margin: 0 0;
 }
 .footer {
   background-image: url(img/BG.jpg);
